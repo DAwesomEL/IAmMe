@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3636163463029321720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.675023, y: 1.7953008, z: 2.997492}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6732674564621158762}
   - {fileID: 890173562275298128}
+  - {fileID: 6732674564621158762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 1597816951059003944}
   - component: {fileID: 7612195670479675845}
   m_Layer: 0
-  m_Name: eye1
+  m_Name: pupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5255242945841685842}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: -0.022, z: 0}
+  m_LocalPosition: {x: 0, y: -0.022, z: 0.14}
   m_LocalScale: {x: 0.75225407, y: 0.75225407, z: 0.75225407}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 3769795718765050522}
   - component: {fileID: 5932629708817995870}
   m_Layer: 0
-  m_Name: eye (1)
+  m_Name: eyeL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,14 +223,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5511755670976097624}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.428, y: 0.696, z: 0.15}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15, y: 0.696, z: 0.449}
   m_LocalScale: {x: 0.22218, y: 0.22218, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9139320299722380203}
   m_Father: {fileID: 3636163463029321700}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6198109979326715674
 MeshFilter:
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 2868021552531827915}
   - component: {fileID: 1324866300281515807}
   m_Layer: 0
-  m_Name: eye1
+  m_Name: pupil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,7 +322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6260890193781722226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13999933, y: -0.022, z: 0.007}
+  m_LocalPosition: {x: 0, y: -0.022, z: 0.14}
   m_LocalScale: {x: 0.75225407, y: 0.75225407, z: 0.75225407}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 7037418044383112490}
   - component: {fileID: 3134407684193332973}
   m_Layer: 0
-  m_Name: eye
+  m_Name: eyeR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,14 +418,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9189622799714429896}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.428, y: 0.696, z: -0.15}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15, y: 0.696, z: 0.4269999}
   m_LocalScale: {x: 0.22218, y: 0.22218, z: 0.22218}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5258244512983577822}
   m_Father: {fileID: 3636163463029321700}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6589862630188319976
 MeshFilter:
