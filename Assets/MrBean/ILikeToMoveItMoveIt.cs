@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class ILikeToMoveItMoveIt : MonoBehaviour
@@ -22,13 +23,16 @@ public class ILikeToMoveItMoveIt : MonoBehaviour
 
     float horizontalInput;
     float verticalInput;
-    Vector3 moveDirection;
+    UnityEngine.Vector3 moveDirection;
 
     [Header("Ground Check")]
 
-    [SerializeField] float playerHeight;
+    [SerializeField] Collider boxCastCollider;
+    RaycastHit boxCasthit;
+    [SerializeField] float boxCastMaxDistance;
     public LayerMask whatIsGround; //Baby don't hurt me
-    bool grounded;
+    public bool grounded;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -42,7 +46,7 @@ public class ILikeToMoveItMoveIt : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.55f, whatIsGround);
+        grounded = Physics.BoxCast(boxCastCollider.bounds.center, transform.localScale * 0.99f, -transform.up, out boxCasthit, transform.rotation, boxCastMaxDistance);//new UnityEngine.Vector3(0,-1,0)
 
         MyInput();
         SpeedControl();
@@ -87,10 +91,10 @@ public class ILikeToMoveItMoveIt : MonoBehaviour
     }
     private void SpeedControl ()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        UnityEngine.Vector3 flatVel = new UnityEngine.Vector3(rb.velocity.x, 0f, rb.velocity.z);
         if(flatVel.magnitude > movementSpeed)
         {
-            Vector3 limitedVel = flatVel.normalized * movementSpeed + Vector3.up* rb.velocity.y;
+            UnityEngine.Vector3 limitedVel = flatVel.normalized * movementSpeed + UnityEngine.Vector3.up* rb.velocity.y;
             rb.velocity = limitedVel;
         }
     }
